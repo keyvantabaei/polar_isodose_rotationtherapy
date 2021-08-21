@@ -1,0 +1,8 @@
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/install/strip.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/install/local.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/install.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/list_install_components.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/rebuild_cache.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/edit_cache.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/B1.dir
+/home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/CMakeFiles/k1.dir

@@ -1,0 +1,13 @@
+/gps/particle photon
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 0. 0. 0. cm
+/gps/pos/halfx 2. cm
+/gps/pos/halfy 2. cm
+/gps/ang/type cos
+/gps/ene/type User
+/gps/hist/type energy
+/gps/hist/point 1.0 0.
+/gps/hist/point 2.0 5.
+/gps/hist/point 7.0 1.
+/gps/hist/point 10. 1.

@@ -1,0 +1,19 @@
+/run/initialize
+/control/verbose  0
+/run/verbose 0
+/event/verbose    0
+/tracking/verbose 0
+
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre 0. 5. -20 cm
+/gps/direction 0 0 1
+/gps/energy 0.5 MeV
+
+#/process/eLoss/StepFunction 0.016 13 um
+
+/run/beamOn 1
+
+
+
+

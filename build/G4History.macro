@@ -1,0 +1,302 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector 0 1 0
+/vis/viewer/set/lightsVector 0 1 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/set/colour red
+/vis/set/lineWidth 2
+/vis/scene/add/frame
+/vis/scene/notifyHandlers
+/vis/set/colour
+/vis/set/lineWidth
+/vis/geometry/set/visibility world_LOGIC 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour waterphantom_LOGIC 0 0 0 1 .3
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 150
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/vis/viewer/flush
+/vis/viewer/refresh viewer-0
+/vis/viewer/update viewer-0
+/control/execute /home/k1/k1-Files/Programing/Geant4-workshop/reports/2/result/Multiple Beam And Rotation Therapy/isodose-polar-coordinate/source/build/plan_source.mac
+/run/initialize
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/gps/source/intensity 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.0 -1.0 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 100.0 0.0 0 cm
+/gps/direction -1.0 -0.0 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.1736 -0.9848 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 98.48 17.36 0 cm
+/gps/direction -0.9848 -0.1736 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.342 -0.9397 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 93.97 34.2 0 cm
+/gps/direction -0.9397 -0.342 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.5 -0.866 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 86.6 50.0 0 cm
+/gps/direction -0.866 -0.5 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.6428 -0.766 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 76.6 64.28 0 cm
+/gps/direction -0.766 -0.6428 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.766 -0.6428 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 64.28 76.6 0 cm
+/gps/direction -0.6428 -0.766 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.866 -0.5 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 50.0 86.6 0 cm
+/gps/direction -0.5 -0.866 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.9397 -0.342 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 34.2 93.97 0 cm
+/gps/direction -0.342 -0.9397 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.9848 -0.1736 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 17.36 98.48 0 cm
+/gps/direction -0.1736 -0.9848 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 1.0 -0.0 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre 0.0 100.0 0 cm
+/gps/direction -0.0 -1.0 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.9848 0.1736 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -17.36 98.48 0 cm
+/gps/direction 0.1736 -0.9848 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.9397 0.342 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -34.2 93.97 0 cm
+/gps/direction 0.342 -0.9397 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.866 0.5 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -50.0 86.6 0 cm
+/gps/direction 0.5 -0.866 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.766 0.6428 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -64.28 76.6 0 cm
+/gps/direction 0.6428 -0.766 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.6428 0.766 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -76.6 64.28 0 cm
+/gps/direction 0.766 -0.6428 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.5 0.866 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -86.6 50.0 0 cm
+/gps/direction 0.866 -0.5 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.342 0.9397 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -93.97 34.2 0 cm
+/gps/direction 0.9397 -0.342 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.1736 0.9848 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -98.48 17.36 0 cm
+/gps/direction 0.9848 -0.1736 0
+/gps/source/add 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 10 MeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0.0 1.0 0
+/gps/pos/rot2 0 0 1
+/gps/pos/halfy 3.5 cm
+/gps/pos/halfx 5 cm
+/gps/pos/centre -100.0 0.0 0 cm
+/gps/direction 1.0 -0.0 0
+/run/beamOn 10000
+/vis/scene/notifyHandlers scene-0
